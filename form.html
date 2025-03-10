@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقرير اجتماع الموظفين</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            direction: rtl;
+            text-align: right;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: auto;
+            text-align: center;
+        }
+        .logo {
+            max-width: 150px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        h2 {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+            text-align: right;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #005599;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="شعار المركز" class="logo">
+        <h2>تقرير اجتماع الموظفين</h2>
+        <form action="https://formsubmit.co/info@ynmocenter.com" method="post">
+            <label for="date">تاريخ الاجتماع:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">وقت الاجتماع:</label>
+            <input type="text" id="time" name="time" placeholder="من 00:00 إلى 00:00" required>
+            
+            <label for="attendees">المشاركون:</label>
+            <textarea id="attendees" name="attendees" placeholder="أدخل أسماء الحاضرين"></textarea>
+            
+            <label for="topics">الموضوعات الرئيسية:</label>
+            <textarea id="topics" name="topics" placeholder="النقاط التي تمت مناقشتها"></textarea>
+            
+            <label for="recommendations">المقترحات والتوصيات:</label>
+            <textarea id="recommendations" name="recommendations" placeholder="أي توصيات تم تقديمها"></textarea>
+            
+            <label for="tasks">المهام الموكلة:</label>
+            <textarea id="tasks" name="tasks" placeholder="المهام المعينة للموظفين"></textarea>
+            
+            <label for="deadlines">المواعيد النهائية:</label>
+            <textarea id="deadlines" name="deadlines" placeholder="المهام التي يجب إنهاؤها مع التواريخ"></textarea>
+            
+            <label for="challenges">التحديات المطروحة:</label>
+            <textarea id="challenges" name="challenges" placeholder="المشكلات التي تمت مناقشتها"></textarea>
+            
+            <label for="decisions">اتخاذ القرارات:</label>
+            <textarea id="decisions" name="decisions" placeholder="أي قرارات رسمية تم اتخاذها"></textarea>
+            
+            <label for="notes">ملاحظات إضافية:</label>
+            <textarea id="notes" name="notes" placeholder="أي نقاط أخرى تم تسجيلها"></textarea>
+            
+            <label for="followup">المتابعة:</label>
+            <textarea id="followup" name="followup" placeholder="متى سيتم متابعة الإجراءات؟"></textarea>
+            
+            <button type="submit">إرسال التقرير</button>
+        </form>
+    </div>
+</body>
+</html>
